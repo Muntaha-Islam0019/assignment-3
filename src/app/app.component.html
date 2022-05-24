@@ -4,6 +4,9 @@
   tempora assumenda laborum quas at doloremque dicta minus magni iste voluptatum
   necessitatibus optio. Error, eum inventore? Provident minus assumenda nemo!
 </p>
-<div *ngFor="let log of logArray">
+<div
+  *ngFor="let log of logArray"
+  [ngStyle]="{ backgroundColor: log > 4 ? 'blue' : 'transparent' }"
+>
   {{ log }}
 </div>
