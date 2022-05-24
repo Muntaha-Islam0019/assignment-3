@@ -1,4 +1,9 @@
-<button (click)="display = !display">Display Details</button>
+<button (click)="onClick()">Display Details</button>
 <p *ngIf="display">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, distinctio tempora assumenda laborum quas at doloremque dicta minus magni iste voluptatum necessitatibus optio. Error, eum inventore? Provident minus assumenda nemo!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, distinctio
+  tempora assumenda laborum quas at doloremque dicta minus magni iste voluptatum
+  necessitatibus optio. Error, eum inventore? Provident minus assumenda nemo!
 </p>
+<div *ngFor="let log of logArray">
+  {{ log }}
+</div>
